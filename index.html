@@ -2,145 +2,341 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mukesh Kumar | Developer Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mukesh Kumar's portfolio — AI/ML and software development projects." />
+  <title>Mukesh Kumar | AI/ML Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <header>
-    <a href="#home" class="logo">MK<span>.</span></a>
+  <div class="background-glow glow-one"></div>
+  <div class="background-glow glow-two"></div>
 
-    <nav>
+  <header class="navbar">
+    <a href="#home" class="logo">Mukesh<span>.</span></a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation"
+      aria-expanded="false">☰</button>
+
+    <nav class="nav-links" id="navLinks">
       <a href="#home">Home</a>
       <a href="#about">About</a>
-      <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact" class="nav-button">Let's Talk ↗</a>
     </nav>
   </header>
 
   <main>
-    <section class="hero" id="home">
-      <div class="hero-content">
-        <p class="tag">HELLO, WORLD! I'M</p>
-        <h1>Mukesh <span>Kumar</span></h1>
-        <h2>Machine Learning Enthusiast</h2>
-        <p class="intro">
-          I build intelligent solutions using Python, Machine Learning
-          and Deep Learning. I enjoy solving problems and learning
-          new technologies.
+    <!-- HERO -->
+    <section class="hero section" id="home">
+      <div class="hero-content reveal">
+        <span class="availability">
+          <span class="status-dot"></span> Open to Opportunities
+        </span>
+
+        <p class="eyebrow">HELLO, I'M</p>
+        <h1>Mukesh Kumar<span class="gradient-text">.</span></h1>
+
+        <h2>
+          Aspiring <span class="gradient-text">AI/ML Developer</span>
+        </h2>
+
+        <p class="hero-description">
+          I build intelligent solutions using Machine Learning, Deep Learning
+          and Python. I love turning data into meaningful insights and
+          solving real-world problems through technology.
         </p>
 
-        <div class="buttons">
-          <a href="#projects" class="btn primary">Explore Projects</a>
-          <a href="#contact" class="btn secondary">Contact Me</a>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">Explore My Work ↗</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
         </div>
 
-        <div class="socials">
+        <div class="social-links">
           <a href="https://github.com/mukesh-ai577"
-             target="_blank" rel="noreferrer">GitHub ↗</a>
+             target="_blank" rel="noopener noreferrer">GitHub ↗</a>
           <a href="https://www.linkedin.com/in/mukesh-kumar-380b43336/"
-             target="_blank" rel="noreferrer">LinkedIn ↗</a>
+             target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
         </div>
       </div>
 
-      <div class="hero-card">
-        <div class="card-top"><span></span><span></span><span></span></div>
-        <p class="code-purple">class <span>Developer</span>:</p>
-        <p class="indent">name = "Mukesh Kumar"</p>
-        <p class="indent">skills = [</p>
-        <p class="indent2">"Python",</p>
-        <p class="indent2">"Machine Learning",</p>
-        <p class="indent2">"Deep Learning"</p>
-        <p class="indent">]</p>
-        <p class="code-green">keep_learning = True</p>
+      <div class="hero-visual reveal">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+
+        <div class="profile-card">
+          <div class="profile-avatar">MK</div>
+          <div class="profile-caption">
+            <span class="mini-dot"></span>
+            <span>Learning. Building. Growing.</span>
+          </div>
+        </div>
+
+        <div class="floating-card float-top">
+          <span class="float-icon purple">✦</span>
+          <div>
+            <strong>AI / ML</strong>
+            <small>Building intelligent systems</small>
+          </div>
+        </div>
+
+        <div class="floating-card float-bottom">
+          <span class="float-icon pink">⌘</span>
+          <div>
+            <strong>Python Developer</strong>
+            <small>Turning ideas into code</small>
+          </div>
+        </div>
+
+        <div class="decor decor-one">✳</div>
+        <div class="decor decor-two">✦</div>
       </div>
     </section>
 
-    <section class="section" id="about">
-      <p class="tag">GET TO KNOW ME</p>
-      <h2>About <span>Me</span></h2>
-      <p class="section-text">
-        I am a B.Tech Computer Science and Technology student
-        in Gurugram, Haryana. I am developing my skills in AI,
-        Machine Learning, Deep Learning, DSA and software development.
-      </p>
-    </section>
+    <!-- CODE CARD -->
+    <section class="code-section section reveal">
+      <div class="code-card">
+        <div class="code-header">
+          <div class="window-dots">
+            <span></span><span></span><span></span>
+          </div>
+          <span>about_me.py</span>
+          <span class="code-label">PYTHON</span>
+        </div>
 
-    <section class="section" id="projects">
-      <p class="tag">WHAT I'VE BUILT</p>
-      <h2>My <span>Projects</span></h2>
+        <pre><code><span class="code-purple">class</span> <span class="code-yellow">Developer</span>:
+    name = <span class="code-green">"Mukesh Kumar"</span>
+    role = <span class="code-green">"AI/ML Developer"</span>
+    skills = [
+        <span class="code-green">"Python"</span>,
+        <span class="code-green">"Machine Learning"</span>,
+        <span class="code-green">"Deep Learning"</span>
+    ]
 
-      <div class="projects">
-        <article class="project">
-          <span class="project-icon">🎬</span>
-          <h3>Movie Recommendation</h3>
-          <p>Recommend similar movies using content-based filtering.</p>
-          <p class="tech">Python · ML · NLP</p>
-          <a href="https://github.com/mukesh-ai577"
-             target="_blank" rel="noreferrer">View Code ↗</a>
-        </article>
-
-        <article class="project">
-          <span class="project-icon">📊</span>
-          <h3>Churn Prediction</h3>
-          <p>Predict customer churn with machine learning and model evaluation.</p>
-          <p class="tech">Python · Scikit-learn · MLflow</p>
-          <a href="https://github.com/mukesh-ai577"
-             target="_blank" rel="noreferrer">View Code ↗</a>
-        </article>
-
-        <article class="project">
-          <span class="project-icon">⚙️</span>
-          <h3>Predictive Maintenance</h3>
-          <p>Use an ANN model to predict potential machine failures.</p>
-          <p class="tech">Python · TensorFlow · Keras</p>
-          <a href="https://github.com/mukesh-ai577"
-             target="_blank" rel="noreferrer">View Code ↗</a>
-        </article>
-
-        <article class="project">
-          <span class="project-icon">🧠</span>
-          <h3>Diabetes Prediction</h3>
-          <p>Build a neural network for a binary classification task.</p>
-          <p class="tech">Python · ANN · Keras</p>
-          <a href="https://github.com/mukesh-ai577"
-             target="_blank" rel="noreferrer">View Code ↗</a>
-        </article>
+    <span class="code-purple">def</span> <span class="code-blue">build_future</span>(self):
+        <span class="code-purple">return</span> <span class="code-green">"Always learning, always building!"</span></code></pre>
       </div>
     </section>
 
+    <!-- ABOUT -->
+    <section class="section about-section" id="about">
+      <div class="section-heading reveal">
+        <span class="section-tag">GET TO KNOW ME</span>
+        <h2>About <span class="gradient-text">Me</span></h2>
+        <p>A curious mind with a passion for technology and innovation.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card glass-card reveal">
+          <span class="about-icon">🎓</span>
+          <h3>My Journey</h3>
+          <p>
+            I'm pursuing a B.Tech in Computer Science and Technology.
+            I'm developing my skills in Python, Machine Learning,
+            Deep Learning and software development by building practical projects.
+          </p>
+        </div>
+
+        <div class="about-card glass-card reveal">
+          <span class="about-icon">🎯</span>
+          <h3>My Goal</h3>
+          <p>
+            To become a skilled AI/ML professional, create useful
+            data-driven applications and continuously grow through
+            hands-on learning and real-world problem solving.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
     <section class="section" id="skills">
-      <p class="tag">MY TOOLKIT</p>
-      <h2>Technical <span>Skills</span></h2>
-      <div class="skills">
-        <span>Python</span><span>C++</span><span>SQL / MySQL</span>
-        <span>Machine Learning</span><span>Deep Learning</span>
-        <span>NLP</span><span>Pandas & NumPy</span>
-        <span>Scikit-learn</span><span>TensorFlow / Keras</span>
-        <span>Git & GitHub</span><span>Linux</span><span>HTML & CSS</span>
+      <div class="section-heading reveal">
+        <span class="section-tag">WHAT I WORK WITH</span>
+        <h2>My <span class="gradient-text">Skills</span></h2>
+        <p>Technologies and concepts I'm learning and applying in my projects.</p>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill-card reveal">
+          <div class="skill-icon icon-purple">Py</div>
+          <h3>Programming</h3>
+          <div class="skill-tags">
+            <span>Python</span><span>C++</span><span>OOP</span>
+          </div>
+        </article>
+
+        <article class="skill-card reveal">
+          <div class="skill-icon icon-blue">ML</div>
+          <h3>Machine Learning</h3>
+          <div class="skill-tags">
+            <span>Scikit-learn</span><span>Feature Engineering</span><span>Model Evaluation</span>
+          </div>
+        </article>
+
+        <article class="skill-card reveal">
+          <div class="skill-icon icon-pink">AI</div>
+          <h3>Deep Learning</h3>
+          <div class="skill-tags">
+            <span>ANN</span><span>CNN</span><span>TensorFlow / Keras</span>
+          </div>
+        </article>
+
+        <article class="skill-card reveal">
+          <div class="skill-icon icon-orange">DB</div>
+          <h3>Data & Tools</h3>
+          <div class="skill-tags">
+            <span>SQL / MySQL</span><span>Pandas</span><span>NumPy</span>
+            <span>Matplotlib</span><span>Git / GitHub</span>
+          </div>
+        </article>
       </div>
     </section>
 
-    <section class="section contact" id="contact">
-      <p class="tag">LET'S CONNECT</p>
-      <h2>Have an <span>opportunity?</span></h2>
-      <p class="section-text">
-        I am interested in learning, building projects and exploring
-        suitable internship opportunities.
-      </p>
-      <a class="btn primary"
-         href="https://github.com/mukesh-ai577"
-         target="_blank" rel="noreferrer">Connect on GitHub ↗</a>
+    <!-- PROJECTS -->
+    <section class="section projects-section" id="projects">
+      <div class="section-heading reveal">
+        <span class="section-tag">SOME THINGS I'VE BUILT</span>
+        <h2>Featured <span class="gradient-text">Projects</span></h2>
+        <p>Practical projects where I apply my knowledge to solve problems.</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <article class="project-card reveal">
+          <div class="project-art art-movie">
+            <div class="poster-symbol">▶</div>
+            <span class="art-caption">MOVIE DISCOVERY</span>
+          </div>
+          <div class="project-info">
+            <span class="project-category">MACHINE LEARNING</span>
+            <h3>Movie Recommendation System</h3>
+            <p>
+              Recommends similar movies using content-based filtering
+              and movie metadata.
+            </p>
+            <div class="project-tags">
+              <span>Python</span><span>Pandas</span><span>Streamlit</span>
+            </div>
+            <a class="project-link"
+               href="https://github.com/mukesh-ai577/movies-recommendation-system-tmdb-dataset"
+               target="_blank" rel="noopener noreferrer">
+              View on GitHub <span>↗</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-art art-churn">
+            <div class="chart-bars">
+              <i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+            <span class="art-caption">CUSTOMER ANALYTICS</span>
+          </div>
+          <div class="project-info">
+            <span class="project-category">PREDICTIVE ANALYTICS</span>
+            <h3>Customer Churn Prediction</h3>
+            <p>
+              Predicts customer churn using classification models,
+              model evaluation and hyperparameter tuning.
+            </p>
+            <div class="project-tags">
+              <span>Scikit-learn</span><span>MLflow</span><span>Optuna</span>
+            </div>
+            <a class="project-link"
+               href="https://github.com/mukesh-ai577/churn-prediction-mlops"
+               target="_blank" rel="noopener noreferrer">
+              View on GitHub <span>↗</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-art art-maintenance">
+            <div class="machine-symbol">⚙</div>
+            <span class="art-caption">SMART INDUSTRY</span>
+          </div>
+          <div class="project-info">
+            <span class="project-category">DEEP LEARNING</span>
+            <h3>Predictive Maintenance</h3>
+            <p>
+              Uses an Artificial Neural Network to predict potential
+              machine failures from sensor data.
+            </p>
+            <div class="project-tags">
+              <span>ANN</span><span>TensorFlow</span><span>Pandas</span>
+            </div>
+            <a class="project-link"
+               href="https://github.com/mukesh-ai577"
+               target="_blank" rel="noopener noreferrer">
+              View on GitHub <span>↗</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-art art-diabetes">
+            <div class="health-symbol">✚</div>
+            <span class="art-caption">HEALTHCARE AI</span>
+          </div>
+          <div class="project-info">
+            <span class="project-category">NEURAL NETWORKS</span>
+            <h3>Diabetes Prediction</h3>
+            <p>
+              A neural network classification project that estimates
+              diabetes risk from input features.
+            </p>
+            <div class="project-tags">
+              <span>Python</span><span>Keras</span><span>ANN</span>
+            </div>
+            <a class="project-link"
+               href="https://github.com/mukesh-ai577"
+               target="_blank" rel="noopener noreferrer">
+              View on GitHub <span>↗</span>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact-section" id="contact">
+      <div class="contact-card reveal">
+        <span class="section-tag">HAVE A PROJECT IN MIND?</span>
+        <h2>Let's Build Something <span class="gradient-text">Amazing.</span></h2>
+        <p>
+          I'm interested in learning, collaborating and exploring
+          opportunities in AI/ML and software development.
+        </p>
+
+        <div class="contact-buttons">
+          <!-- Replace this email with your real email -->
+          <a href="mailto:mukeshai74083@gmail.com" class="btn btn-primary">
+            Send Me an Email ↗
+          </a>
+          <a href="https://www.linkedin.com/in/mukesh-kumar-380b43336/"
+             target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            Connect on LinkedIn
+          </a>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>© <span id="year"></span> Mukesh Kumar. Built with HTML & CSS.</p>
-    <a href="#home">Back to top ↑</a>
+  <footer class="footer">
+    <a href="#home" class="logo">Mukesh<span>.</span></a>
+    <p>Designed with curiosity and built with code.</p>
+    <p>© <span id="year"></span> Mukesh Kumar</p>
   </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
 
   <script src="script.js"></script>
 </body>
